@@ -9,28 +9,6 @@ This repository lists proposals for the Strimzi project. A template for new prop
 
 | #  | Title                                                                 |
 |:--:|:----------------------------------------------------------------------|
-| 141 | [Make PKCS12 stores in CA and User `Secrets` optional](./141-make-PKCS12-stores-in-CA-and-user-secrets-optional.md) |
-| 140 | [Replace in-process ConnectCluster with StrimziConnectCluster](./140-replace-in-process-connect-cluster-with-strimzi-connect-cluster.md) |
-| 139 | [Background deletion propagation for Pods](./139-background-deletion-propagation.md) |
-| 138 | [Configurable `validityDays` and `renewalDays` per `KafkaUser`](./138-configurable-validitydays-and-renewaldays-per-kafkauser.md) |
-| 137 | [Re-issue KafkaUser's certificate on demand](./137-re-issue-kafka-user-certificate-on-demand.md) |
-| 136 | [Gateway API-based `type: tlsroute` listener](./136-tls-route-listener.md) |
-| 135 | [Templating `advertisedPort` fields in the `Kafka` custom resource](./135-templating-advertised-port-fields.md) |
-| 134 | [Dedicated executor service for HTTP Bridge async Kafka-related operations](./134-dedicated-executor-for-kafka-bridge.md) |
-| 133 | [Asynchronous Issue Triage](./133-async-triage.md) |
-| 132 | [TLS support in test-container](./132-tls-support-in-test-container.md) |
-| 131 | [In-place Pod resizing](./131-in-place-pod-resizing.md) |
-| 130 | [Publishing Test-Clients to Maven](./130-publishing-test-clients-to-maven.md) |
-| 129 | [Deprecate `type: ingress` listeners](./129-deprecate-type-ingress-listeners.md) |
-| 128 | [Kafka Node Pool rack IDs from environment variables](./128-rack-ids-from-environment-variables.md) |
-| 127 | [Add support for Linux user namespaces in Strimzi Pods](./127-add-support-for-linux-user-namespaces-in-strimzi-pods.md) |
-| 126 | [Move Strimzi Operators to Java 21](./126-move-strimzi-operators-to-java-21.md) |
-| 125 | [Change success response status of health checks to 200 (OK)](./125-change-health-check-response-status-200.md) |
-| 124 | [Add support `connections.max.reauth.ms` configuration for SCRAM listeners](./124-reauth-config-for-scram-listener.md) |
-| 123 | [Remove default Pod anti-affinity rules when rack awareness is enabled](./123-remove-default-pod-anti-affinity-rules-when-rack-awareness-is-enabled.md) |
-| 122 | [Add support for TLS/SSL on the HTTP interface](./122-enable-ssl-for-kafka-bridge.md) |
-| 121 | [Deprecate and remove `.spec.kafka.resources` from the `Kafka` custom resource](./121-deprecate-and-remove-kafka-spec-kafka-resources.md) |
-| 120 | [Improve template behavior in Kafka Node Pools](./120-improve-template-behavior-in-Kafka-node-pools.md) |
 | 119 | [Add includeScope parameter to Maven artifacts for KafkaConnect build](./119-add-includeScope-parameter-to-maven-artifact-for-kafka-connect-build.md) |
 | 118 | [Running multiple versions of Connector plugins](./118-running-multiple-versions-of-connector-plugins.md) |
 | 117 | [`v1` CRD API Conversion Tool](./117-v1-CRD-API-Conversion-Tool.md) |
