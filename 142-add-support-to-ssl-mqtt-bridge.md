@@ -53,7 +53,9 @@ mqtt.server.ssl.enabled.protocols=TLSv1.2,TLSv1.3
 mqtt.server.ssl.enabled.cipher.suites=TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384
 ```
 
-> If these options are not specified, the MQTT Bridge will use the default SSL/TLS configurations provided by the Java runtime.
+> If `mqtt.server.ssl.enabled.protocols` is not set, the bridge will use `TLSv1.2,TLSv1.3` as the defaults protocols.
+
+> If `mqtt.server.ssl.enabled.cipher.suites` is not set, the bridge will use the list of cipher suites provided by the underlying JDK SSL/TLS engine.
 
 A new class named `MqttSslConfig` will be used as a new configuration wrapper class to load and manage these new config options.
 This class will then be part of the existing `MqttConfig`.
