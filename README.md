@@ -9,6 +9,19 @@ This repository lists proposals for the Strimzi project. A template for new prop
 
 | #  | Title                                                                 |
 |:--:|:----------------------------------------------------------------------|
+| 154 | [Consolidating the `KafkaRebalance` API for extensibility](./154-kafkarebalance-custom-resource-consolidation.md) |
+| 153 | [Strimzi-native Configurable Certificate Key Strength](./153-configurable-ca-key-size.md) |
+| 152 | [Use ubi10-micro as a base image](./152-use-ubi10-as-base-image.md) |
+| 151 | [Support broker cordoning in auto-rebalancing on scale-down](./151-broker-cordoning-scale-down.md) |
+| 150 | [Configurable Security for Internal Kafka Cluster Communication](./150-configurable-security-of-internal-communication.md) |
+| 149 | [Maven mirror support for Kafka Connect builds](./149-connect-build-maven-mirror.md) |
+| 148 | [Auto-Rebalance on Imbalanced Clusters](./148-auto-rebalance-on-imbalanced-clusters.md) |
+| 147 | [Templating Additional Volumes for Pods with Stable Identities](./147-templating-additional-volumes.md) |
+| 146 | [Add KIP-714 support to metrics-reporter](./146-metrics-reporter-kip-714.md) |
+| 145 | [Alerting for stuck reconciliations](./145-stuck-reconciliation-alerting.md) |
+| 144 | [Strimzi _Gatekeeper_ plugin system](./144-Strimzi-Gatekeeper-plugin-system.md) |
+| 143 | [Enable SSL for Metrics Reporter](./143-enable-ssl-for-metrics-reporter.md) |
+| 142 | [Per-broker annotation and label templates for Kafka listeners](./142-per-broker-annotation-and-label-templates.md) |
 | 141 | [Make PKCS12 stores in CA and User `Secrets` optional](./141-make-PKCS12-stores-in-CA-and-user-secrets-optional.md) |
 | 140 | [Replace in-process ConnectCluster with StrimziConnectCluster](./140-replace-in-process-connect-cluster-with-strimzi-connect-cluster.md) |
 | 139 | [Background deletion propagation for Pods](./139-background-deletion-propagation.md) |
