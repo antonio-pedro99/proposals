@@ -46,7 +46,6 @@ mqtt.server.ssl.key=--BEGIN PRIVATE KEY--\n...\n--END PRIVATE KEY--
 Inline values take precedence over file-based values.
 
 We will also support the configuration for specifying the enabled protocols and cipher suites.
-These options will be optional for the users and when not set, the Netty / JRE default values will be used.
 
 ```application.properties
 mqtt.server.ssl.enabled.protocols=TLSv1.2,TLSv1.3
@@ -59,7 +58,6 @@ mqtt.server.ssl.enabled.cipher.suites=TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA
 
 A new class named `MqttSslConfig` will be used as a new configuration wrapper class to load and manage these new config options.
 This class will then be part of the existing `MqttConfig`.
-The SSL/TLS state will be derived from the configured MQTT server port rather than from a separate enable flag; for example, `MqttSslConfig.isEnabled()` can return true when the configured port is 8883.
 It would look like this:
 
 ```java
@@ -182,7 +180,3 @@ This proposal will affect only the MQTT Bridge component of Strimzi.
 
 We are currently using MQTT version 3.1.1.
 SSL/TLS is transport-level security and does not depend on MQTT protocol features, so this proposal should be compatible with both MQTT 3.1.1 and a future MQTT 5.0 upgrade.
-
-## Rejected alternatives
-
-Handling authentication and authorization is out of the scope for this proposal. They should be addressed separately. 
