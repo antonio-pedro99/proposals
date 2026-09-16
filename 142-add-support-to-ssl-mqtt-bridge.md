@@ -22,6 +22,7 @@ When SSL/TLS is configured, the MQTT Bridge will add a Netty SSL handler before 
 
 This proposal is limited to SSL/TLS encryption for MQTT client connections.
 It does not change MQTT topic handling, Kafka mapping behavior, or MQTT client session semantics.
+Handling authentication and authorization is out of the scope for this proposal. They should be addressed separately
 
 ## Technical implementation
 
