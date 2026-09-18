@@ -34,12 +34,12 @@ We will not add a separate TLS port configuration.
 It will look like this:
 
 ```application.properties
-mqtt.server.port=8883
-mqtt.server.ssl.enable=true
-mqtt.server.ssl.certificate.location=path/to/server-cert.pem
-mqtt.server.ssl.key.location=path/to/server-key.pem
-mqtt.server.ssl.certificate=--BEGIN CERTIFICATE--\n...\n--END CERTIFICATE--
-mqtt.server.ssl.key=--BEGIN PRIVATE KEY--\n...\n--END PRIVATE KEY--
+mqtt.port=8883
+mqtt.ssl.enable=true
+mqtt.ssl.certificate.location=path/to/server-cert.pem
+mqtt.ssl.key.location=path/to/server-key.pem
+mqtt.ssl.certificate=--BEGIN CERTIFICATE--\n...\n--END CERTIFICATE--
+mqtt.ssl.key=--BEGIN PRIVATE KEY--\n...\n--END PRIVATE KEY--
 ```
 
 > Note: All SSL certificate and key should be in PEM format, it will not support format like PKCS12.
@@ -49,13 +49,13 @@ Inline values take precedence over file-based values.
 We will also support the configuration for specifying the enabled protocols and cipher suites.
 
 ```application.properties
-mqtt.server.ssl.enabled.protocols=TLSv1.2,TLSv1.3
-mqtt.server.ssl.enabled.cipher.suites=TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384
+mqtt.ssl.enabled.protocols=TLSv1.2,TLSv1.3
+mqtt.ssl.enabled.cipher.suites=TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384
 ```
 
-> If `mqtt.server.ssl.enabled.protocols` is not set, the bridge will use `TLSv1.2,TLSv1.3` as the defaults protocols.
+> If `mqtt.ssl.enabled.protocols` is not set, the bridge will use `TLSv1.2,TLSv1.3` as the defaults protocols.
 
-> If `mqtt.server.ssl.enabled.cipher.suites` is not set, the bridge will use the list of cipher suites provided by the underlying JDK SSL/TLS engine.
+> If `mqtt.ssl.enabled.cipher.suites` is not set, the bridge will use the list of cipher suites provided by the underlying JDK SSL/TLS engine.
 
 A new class named `MqttSslConfig` will be used as a new configuration wrapper class to load and manage these new config options.
 This class will then be part of the existing `MqttConfig`.
